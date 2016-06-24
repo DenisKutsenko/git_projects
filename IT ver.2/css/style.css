@@ -1,0 +1,333 @@
+﻿/*General styles*/
+
+body {
+	font-family: 'Roboto Condensed', sans-serif, Arial;
+	background: url(img/bg_page.jpg) repeat;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Header */
+
+h1{
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+}
+
+/* /Header 
+
+/*Navigation*/
+nav {
+	text-transform: uppercase;
+
+}
+.nav a,
+.login a {
+	float: left;
+	padding: 10px;
+	display: block;
+	font-weight: bold;
+	color: #24913C;
+	font-size: 20px;
+	text-decoration: none;
+	-webkit-transition: all .33s;
+	-o-transition: all .33s;
+	transition: all .33s;
+}
+
+.login a {
+	font-family: 'Lobster Two', cursive;
+}
+
+.nav li a:hover,
+.login a:hover {
+	color: #425FFE;
+	background: rgba(66,95,254,.2);
+	border-radius: 5px;
+	text-decoration: none;
+}
+#callback {
+	text-align: center;
+	font-family: 'Lobster Two';
+	background-color: #fff;
+	margin: auto;
+}
+#callback input[type="text"] {
+	width: 200px;
+	height: 40px;
+}
+#callback button {
+	font-family: 'Lobster Two', cursive;
+	padding: 5px;
+	border-radius: 5px;
+}
+/* Login_Form*/
+
+#login {
+	background: linear-gradient(-45deg, #dfbd9a, #aa7281, #102158);
+	width: 850px;
+	height: 170px;
+}
+header {
+	text-align: center;
+}
+header a {
+	color: inherit;
+	font-weight: bold;
+}
+
+h2, .h2 {
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	margin-top: 20px;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  margin: 4px auto;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 538px;
+}
+.back-visible .front-sign-in {
+  transform: rotateX(180deg);
+}
+.back-visible .back-sign-up {
+  transform: rotateX(0deg);
+}
+
+.front-sign-in, .back-sign-up {
+  background-color: rgba(245, 246, 247, 0.9);
+  backface-visibility: hidden;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 1px white, inset 0 0 1px white;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 1px white, inset 0 0 1px white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 1px white, inset 0 0 1px white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  height: 75px;
+  left: 0;
+  padding-top: 9px;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+.back-sign-up {
+  transform: rotateX(180deg);
+}
+
+input[type="text"], input[type="password"] {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #f5f6f7;
+  -webkit-box-shadow: 0 1px white, inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px white, inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px white, inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b1b3b8;
+  font-size: 18px;
+  height: 57px;
+  margin-left: 12px;
+  padding-left: 12px;
+  width: 248px;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  background-color: #f60;
+  border: 0;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 52px;
+  padding: 0 12px;
+  position: absolute;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.54);
+  z-index: -1;
+}
+
+.signin-submit {
+  right: -80px;
+}
+
+.signup-submit {
+  right: -145px;
+}
+
+.signup-submit:hover, .signin-submit:hover {text-shadow: 0 0 1px #fff;}
+
+/* Login_Form*/
+.login a{
+	float: right;
+	text-transform: none;
+}
+
+
+
+/* Main */
+.product {
+	text-align: center;
+}
+.product img{
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	background: rgba(248,231,188,.5);
+	border-radius: 5px;
+}
+.product a {
+	text-decoration: none;
+	color: #595959;
+}
+.product a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+/* /Main */
+
+/*Popup*/
+
+.hidden {
+	display: none;
+}
+
+#form {
+	padding: 50px 20px;
+	background-color: #fff;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#form input {
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	background-color: rgba(149,149,149,.4);
+}
+#form button {
+
+}
+/*Popup*/
+/*Slider*/
+
+.sider_container img {
+	max-width: 100%;
+	border-radius: 5px;
+	background: rgba(248,231,188,.5);
+}
+.sider_container {
+	position: relative;
+}
+.next_button, .prev_button {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10em;
+	color: #000;
+	cursor: pointer;
+	font-size: 46px;
+	padding: 0 25px;
+	position: absolute;
+	top: 40%;
+	z-index: 10;
+}
+.next_button {
+	right: 20px;
+}
+.prev_button {
+	left: 20px;
+}
+/*Slider*/
+
+.description h4{
+	color: #960C70;
+	font-size: 18px;
+	padding-left: 25px;
+	text-align: justify;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+
+/*Footer*/
+
+footer {
+	background-color: rgba(223, 240, 216, .10);
+	margin: 15px;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 3px;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #056369;
+}
+.footer a:hover {
+	color: #000;
+}
+#phone {
+	margin: 15px ;
+	float: left;
+}
+.fa-stack {
+	float: right;
+	margin: 0 10px;
+}
+.fa-stack a{
+	color: #333;
+}
+.fa-stack a:hover {
+	color: #3B5998;
+}
+#vk a:hover {
+	color: #597da3;
+}
+#git a:hover {
+	color: #F5F5F5;
+}
+/*Footer*/
+
+
+/*Fonts*/
+
+/* font-family: 'Roboto Condensed', sans-serif;
+	 font-family: 'Lobster Two', cursive; */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed|Lobster+Two:400,700&subset=latin,cyrillic);
+/*Fonts*/
